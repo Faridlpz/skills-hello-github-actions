@@ -1,6 +1,6 @@
-name: Post welcome comment
-on:
+name: Post welcome comment # Added a name to our pipeline
+on: # On indicates that our workflow will execute anytime a pull request is executed 
   pull_request:
     types: [opened]
-permissions:
-  pull-requests: write
+permissions: # Assigns the workflow permission to operate on the repository
+  pull-requests: write # Gives the workflow permission to write on the repository 
