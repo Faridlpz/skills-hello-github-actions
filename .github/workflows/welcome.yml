@@ -4,3 +4,7 @@ on: # On indicates that our workflow will execute anytime a pull request is exec
     types: [opened]
 permissions: # Assigns the workflow permission to operate on the repository
   pull-requests: write # Gives the workflow permission to write on the repository 
+jobs:
+  build:
+    name: Post welcome comment
+    runs-on: ubuntu-latest 
